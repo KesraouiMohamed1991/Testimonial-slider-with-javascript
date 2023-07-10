@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: darkgray;
+  display: grid;
+  place-items: center;
+  font-family: "Rubik";
+}
+main .container {
+  height: 70%;
+  width: 90%;
+  display: flex;
+}
+main .container .left {
+  height: 100%;
+  width: 70%;
+  display: flex;
+}
+main .container .left .first {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+main .container .left .first span {
+  position: absolute;
+}
+main .container .left .first .index {
+  top: 20%;
+  left: 10%;
+}
+main .container .left .first .title {
+  top: 20%;
+  left: 40%;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  text-orientation: sideways-right;
+  font-weight: 700;
+  font-size: 2rem;
+}
+main .container .left .first .img-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: flex-end;
+}
+main .container .left .first .img-container .photo {
+  width: 25%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  margin-right: 6px;
+}
+main .container .left .first .img-container .photo img {
+  width: 100%;
+  overflow: hidden;
+}
+main .container .left .first .img-container .photo:after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0%;
+  height: 8px;
+  width: 100%;
+  background-color: yellow;
+  visibility: hidden;
+}
+main .container .left .first .img-container .photo:hover:after {
+  visibility: visible;
+}
+main .container .left .first .img-container .photo-four {
+  height: 100%;
+}
+main .container .left .first .img-container .photo-four img {
+  height: 100%;
+  width: 100%;
+}
+main .right {
+  height: 100%;
+  width: 30%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .right .text h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+main .right .text span {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+main .right .text p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+main .right .btn {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: yellow;
+  display: grid;
+  place-items: center;
+}
+main .right .btn .icon {
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */
